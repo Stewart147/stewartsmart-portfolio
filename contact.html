@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" >
+    <script
+        src="https://kit.fontawesome.com/8a10e0f309.js"
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>LOGO</h1>
+            <h3>SmartDesign</h3>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+         <div class="social" aria-label="Social media links">
+
+                 <a href="https://www.linkedin.com/" target="_blank"
+                   rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                 </a>
+
+                 <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer" aria-label="GitHub">
+                   <i class="fa-brands fa-github"></i>
+                </a>
+
+             </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-section">
+
+        <!-- Left Side Border -->
+
+        <div class="side-border left-border" aria-hidden="true"></div>
+
+        <div class="content-wrapper">
+
+            <div class="heading">
+                Contact
+            </div>
+
+            <!-- TWO=COLUMN LAYOUT -->
+            <div class="contact-layout">
+
+            <!-- LEFT COLUMN: CONTACT DETAILS -->
+             <div class="contact-left">
+
+            <section class="about-card">
+
+
+                <h2>Stewart Smart</h2>
+                <p>6 Broughty Ferry Court</p>
+                <p>Baldovie</p>
+                <p>Dundee</p>
+                <p>Tayside</p>
+                <p>DD4 8UF</p>
+                <br>
+                <p>Tel: 07728087495</p>
+                <br>
+                <p>Email: stewartsmart1@gmail.com</p>
+                <br>
+                <p><a href="https://www.linkedin.com/in/stewart-smart-826967432">linkedIn:</a></p>
+                <br>
+                <p><a href="https://www.github.com/stewart147">GitHub:</a></p>
+
+             
+
+            </section>
+
+
+           <!-- Project Button -->
+
+            <div class="buttons">
+
+                <button type="button">
+                    <a href="projects.html">Projects</a>
+                </button>
+
+            </div>
+
+       </div> 
+
+
+             <!-- RIGHT COLUMN: GOOGLE MAP AND FORM -->
+                <div class="contact-right">
+
+                    <!-- GOOGLE MAP -->
+                    <section class="map-container">
+
+                        <h2>MY LOCATION</h2>
+
+                    <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20broughty%20ferry%20court%20dd48uf+(My%20Portfolio)
+                          &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                          title="Google Maps Location"
+                          loading="lazy"
+                          allowfullscreen=""
+                          referrerpolicy="no-referrer-when-downgrade"
+                          sandbox="allow-scripts allow-same-origin allow-popups">
+                       <p>Your browser does not support iframes. Please visit our 
+                         <a href="https://www.gps.ie/collections/sports-gps/">Smartwatch GPS</a>.
+                      </p>
+                    </iframe>
+
+                      <div class="iframe-controls">
+                        <button onclick="reloadFrame()">Reload Map</button>
+                        <button onclick="toggleFullscreen()">View Fullscreen</button>
+                      </div>
+
+                     <!---  <iframe
+                            src="https://maps.google.com/maps?q=Dundee%2C%20Scotland&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                            title="Google Map showing Dundee, Scotland"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+
+                        <a class="map-link"
+                           href="https://www.google.com/maps/search/?api=1&query=Dundee%2C%20Scotland"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Open in Google Maps
+                        </a> -->
+
+                    </section>
+
+
+        
+            
+            <!-- RIGHT COLUMN: INVITATION FORM -->
+                <section class="form-container">
+
+                    <h2>INVITE USERS</h2>
+
+                    <p class="form-description">
+                        Enter the details below to invite a user.
+                    </p>
+
+                    <form action="#" method="post">
+
+                        <div class="form-group">
+                            <label for="firstname">
+                                First Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstname"
+                                name="firstname"
+                                placeholder="Enter first name"
+                                autocomplete="given-name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastname">
+                                Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastname"
+                                name="lastname"
+                                placeholder="Enter last name"
+                                autocomplete="family-name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter email address"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">
+                                Comments
+                            </label>
+
+                            <textarea
+                                id="comments"
+                                name="comments"
+                                placeholder="Enter your comments"
+                                rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">
+                            SEND INVITES
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </div>
+
+     </div>
+
+            
+        <!-- Right Side Border -->
+
+        <div class="side-border right-border" aria-hidden="true"></div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+             <div class="footer-social">
+
+                 <a href="https://www.linkedin.com/" target="_blank"
+                   rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                 </a>
+
+                 <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer" aria-label="GitHub">
+                   <i class="fa-brands fa-github"></i>
+                </a>
+
+             </div>
+
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+        
+        <script>
+            function reloadFrame() {
+                const frame = document.querySelector('iframe');
+                frame.src = frame.src;
+            }
+
+            function toggleFullscreen() {
+                const frame = document. querySelector('iframe');
+                if (frame.requestFullscreen) {
+                    frame.requestFullscreen();
+                }
+            }
+
+        </script>
+
+</body>
+</html>
+
