@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind 3 Home Page</title>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            mint: '#7FFFD4',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+
+<body>
+
+<!-- header section -->
+
+<header class="bg-emerald-400 p-1 flex justify-between">
+  <h1 class="text-black text-2xl font-bold sm:text-4xl">My Tailwind Website</h1>
+
+  <nav>
+    <a href="index.html" class="m-1 border-2 text-emerald-900 bg-emerald-200 rounded
+     border-emerald-700 p-0.5 hover:bg-green-500  block text-md sm:inline sm:text-xl">Home</a>
+    <a href="gallery.html" class="m-1 border-2 text-emerald-900 bg-emerald-200 rounded
+     border-emerald-700 p-0.5 hover:bg-green-500 block text-md sm:inline sm:text-xl">Gallery</a>
+    <a href="#about" class="m-1 border-2 text-emerald-900 bg-emerald-200 rounded
+     border-emerald-700 p-0.5 hover:bg-green-500 block text-md sm:inline sm:text-xl">About Us</a>
+    <a href="#contact" class="m-1 border-2 text-emerald-900 bg-emerald-200 rounded
+     border-emerald-700 p-0.5 hover:bg-green-500 block text-md sm:inline sm:text-xl">Contact</a>
+  </nav>
+  </header>
+
+  <!-- main section -->
+
+  <div class="h-screen flex justify-center items-center bg-[url('images/tree.jpg')] bg-cover">
+    <div class="text-center w-64 border-2 shadow-inner p-2 z-10 bg-transparent">
+      <h1 class="text-4xl underline underline-offset-4 m-4 bg-yellow-300">Tailwind</h1>
+      <div class="m-2 bg-yellow-300">
+        <p> Tailwind is an awesome framework for CSS that uses utility classes to
+            make the process of styling way easier.
+        </p>
+      </div>
+      <a href="https://tailwindcss.com" class="font-bold text-emerald-900 border
+        border-emerald-900 p-1  text-xl bg-yellow-300 hover:bg-tahiti scale-150">Tailwind Website</a>
+    </div>
+  </div>
+
+<!-- footer section -->
+
+<footer class="bg-emerald-400 p-4 flex justify-center">
+<div class="text-center">
+  <nav>
+    <a href="index.html" class="m-1 border-2 text-emerald-900 bg-emerald-200 rounded
+     border-emerald-700 p-0.5 hover:bg-green-500 block text-md sm:inline sm:text-xl">Home</a>
+    <a href="gallery.html" class="m-1 border-2 text-emerald-900 bg-emerald-200 rounded
+     border-emerald-700 p-0.5 hover:bg-green-500 block text-md sm:inline sm:text-xl">Gallery</a>
+    <a href="#about" class="m-1 border-2 text-emerald-900 bg-emerald-200 rounded
+     border-emerald-700 p-0.5 hover:bg-green-500  block text-md sm:inline sm:text-xl">About Us</a>
+    <a href="#contact" class="m-1 border-2 text-emerald-900 bg-emerald-200 rounded
+     border-emerald-700 p-0.5 hover:bg-green-500 block text-md sm:inline sm:text-xl">Contact</a>
+  </nav>
+
+  <p>&copy; Cuan Swan Ltd.</p>
+  <p>44 Address Road <br>
+    LivingPlace <br>
+    4444
+  </p>
+</div>
+</footer>
+
+
+</body>
+
+</html>
