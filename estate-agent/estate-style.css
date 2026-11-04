@@ -1,0 +1,687 @@
+   * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 10px;
+            margin-bottom: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+
+        /* Accessibility */
+
+        .visually-hidden {
+            position: absolute;
+
+            width: 1px;
+            height: 1px;
+
+            padding: 0;
+            margin: -1px;
+
+            overflow: hidden;
+
+            clip: rect(0, 0, 0, 0);
+
+            white-space: nowrap;
+
+            border: 0;
+        }
+
+
+        /* Main Grid */
+
+        .container-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            gap: 10px;
+
+           
+            grid-template-rows:
+                auto
+                auto
+                200px
+                200px
+                200px
+                200px
+                200px;
+        }
+
+
+        /* Header */
+
+        .sectionA {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            min-height: 100px;
+            background-color: #4a4a4a;
+        }
+
+
+        /* Logo */
+
+        .logo {
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2c5aa0;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+
+        /* Main navigation */
+
+        nav {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #666;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #e6e6e6;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 12px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: lightgray;
+            border-bottom: 2px solid #e6e6e6;
+        }
+
+
+        /* Secondary navigation */
+
+        .sub-nav {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sub-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .sub-nav a {
+            color: #e6e6e6;
+            font-size: 10px;
+            font-weight: 500;
+            padding: 6px 2px;
+            transition: all 0.3s ease;
+        }
+
+        .sub-nav a:hover {
+            color: #fff;
+        }
+
+
+        /* Language */
+
+        .lang {
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .lang select {
+            margin-left: 5px;
+        }
+
+
+        /* Search Section */
+
+        .sectionB {
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+
+
+      
+        .search-form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+
+        .search,
+        .min-price,
+        .max-price,
+        .beds,
+        .baths {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+        }
+
+
+        .search-input {
+            width: 200px;
+            height: 30px;
+            padding: 10px;
+        }
+
+
+        .min-price,
+        .max-price,
+        .beds,
+        .baths {
+            width: 100px;
+            height: 80px;
+        }
+
+
+        .search-form select {
+            height: 30px;
+        }
+
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+            border-color: white;
+        }
+
+
+        .advanced-search {
+            margin-top: 30px;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+
+        .advanced-search a {
+            color: #e6e6e6;
+        }
+
+        .advanced-search a:hover {
+            color: #fff;
+        }
+
+
+        /* Property Images */
+
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .img:hover {
+            opacity: 0.7;
+        }
+
+
+      /* remove figure margin */
+
+        figure {
+            margin: 0;
+        }
+
+
+        /* Property Information */
+
+        .content {
+            line-height: 1.3;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .content h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .content address {
+            font-style: normal;
+        }
+
+        .content address p {
+            margin: 5px 0;
+        }
+
+
+        /* Property 1 */
+
+        .sectionC {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            color: black;
+            text-align: left;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .sectionD {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            background-color: wheat;
+            color: black;
+            text-align: left;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+
+        /* Property 2 */
+
+        .sectionE {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+            color: black;
+            text-align: left;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .sectionF {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            background-color: wheat;
+            color: black;
+            text-align: left;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+
+        /* Property 3 */
+
+        .sectionG {
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;
+            color: black;
+            text-align: left;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .sectionH {
+            grid-column: 2 / 3;
+            grid-row: 5 / 6;
+            background-color: wheat;
+            color: black;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+
+        /* Property 4 */
+
+        .sectionI {
+            grid-column: 1 / 2;
+            grid-row: 6 / 7;
+            color: black;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .sectionJ {
+            grid-column: 2 / 3;
+            grid-row: 6 / 7;
+            background-color: wheat;
+            color: black;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+
+        /* Property 5 */
+
+        .sectionK {
+            grid-column: 1 / 2;
+            grid-row: 7 / 8;
+            color: black;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .sectionL {
+            grid-column: 2 / 3;
+            grid-row: 7 / 8;
+            background-color: wheat;
+            color: black;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+
+        /* Map */
+
+        .sectionM {
+            grid-column: 3 / 4;
+            grid-row: 3 / 8;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .sectionM iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 1040px;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* Responsive Design */
+
+        @media (max-width: 1068px) {
+
+            /*
+                Main grid becomes a single column.
+            */
+
+            .container-grid {
+                display: flex;
+
+                flex-direction: column;
+
+                gap: 10px;
+            }
+
+
+            /* Header */
+
+            header {
+                flex-direction: column;
+                height: auto;
+                min-height: 0;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .logo {
+                width: 100%;
+                min-height: 70px;
+            }
+
+
+            nav {
+                width: 100%;
+                padding: 10px;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                display: block;
+            }
+
+
+            /* Secondary navigation */
+
+            .sub-nav {
+                width: 100%;
+                min-height: 100px;
+                padding: 10px;
+            }
+
+            .sub-nav ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .sub-nav a {
+                padding: 6px 10px;
+            }
+
+
+            .lang {
+                display: flex;
+                justify-content: center;
+                margin-right: 0;
+            }
+
+
+            /* Search */
+
+            .sectionB {
+                width: 100%;
+                display: flex;
+                padding: 20px;
+            }
+
+
+            .search-form {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 5px;
+            }
+
+
+            .search,
+            .min-price,
+            .max-price,
+            .beds,
+            .baths {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+
+
+            .search-input {
+                width: 100%;
+            }
+
+
+            button {
+                margin: 10px auto;
+            }
+
+
+            .advanced-search {
+                margin-bottom: 20px;
+            }
+
+
+            /* Property Sections */
+
+            .sectionC,
+            .sectionD,
+            .sectionE,
+            .sectionF,
+            .sectionG,
+            .sectionH,
+            .sectionI,
+            .sectionJ,
+            .sectionK,
+            .sectionL {
+                width: 100%;
+                min-height: 200px;
+            }
+
+
+            /* Images */
+
+            .img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+
+
+            /* Property information */
+
+            .content {
+                padding: 20px;
+                line-height: 1.3;
+            }
+
+
+            /* Map */
+
+            .sectionM {
+                width: 100%;
+                min-height: 500px;
+            }
+
+            .sectionM iframe {
+                width: 100%;
+                min-height: 500px;
+            }
+        }
+
+
+        /* Small Mobile */
+
+        @media (max-width: 568px) {
+
+            nav ul {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+
+            nav li {
+                width: 100%;
+                text-align: center;
+            }
+
+
+            .sub-nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            .sectionB {
+                padding: 15px;
+            }
+
+
+            .search-input,
+            .min-price,
+            .max-price,
+            .beds,
+            .baths {
+                max-width: 100%;
+            }
+
+
+            .img {
+                height: 220px;
+            }
+
+
+            .content {
+                padding: 15px;
+            }
+
+
+            .content h3 {
+                font-size: 20px;
+            }
+
+            .content h4 {
+                font-size: 16px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+
+
+            .sectionM,
+            .sectionM iframe {
+                min-height: 400px;
+            }
+        }
